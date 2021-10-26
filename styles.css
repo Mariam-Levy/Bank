@@ -50,7 +50,8 @@ section {padding: 5rem 0;}
 /* -------- HEADER STYLES ------------ */
 header {
     width: 100%;
-    height: 7.5rem;
+    /* height: 7.5rem; */
+    height: auto;
     padding: 2.5rem 0;
     background-color: var(--white);
     position: relative;
@@ -305,13 +306,25 @@ footer {
 /* MOBILE RESPONSIVE MENU QUERIES */
 @media screen and (max-width: 832px) {
     nav .btn {display: none;}
-
+    /* header {height: 7.5rem;} */
+    header {
+        width: 100%;
+        height: 7.5rem;
+        padding: 2.5rem 0;
+        background-color: var(--white);
+        position: relative;
+        z-index: 999;
+    }
+    
     .hamburger {
         display: inline-block;
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        /* top: 2rem;
+        right: 2rem; */
         cursor: pointer;
+        top: 50%;
+        right: 2%;
+        transform: translate(-50%, -50%);
     }
 
     .hamburger img {width: 3rem;}
